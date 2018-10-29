@@ -84,10 +84,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 9rem;
 }
 
 .item-img img {
-  height: 9rem;
+  max-width: 9rem;
 }
 
 .description {
@@ -96,4 +97,31 @@ html {
   color: white;
   text-align: center;
   padding: 0.5rem 0;
+}
+
+.store {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.store-info {
+  width: 35%;
+}
+
+.store-info h4 {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 5rem;
 }
