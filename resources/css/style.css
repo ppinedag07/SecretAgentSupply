@@ -4,7 +4,7 @@ html {
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -57,15 +57,19 @@ html {
   color: white;
 }
 
-.nav-items ul {
+.item-lists {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-
 }
 
-.nav-items li {
+.item-lists li, .menu li {
+  text-align: center;
   padding: 0.75rem 0;
+}
+
+.menu {
+  display: none;
 }
 
 .products {
@@ -74,8 +78,10 @@ html {
   justify-content: space-between;
 }
 
-.item {
+.item-pen, .item-watch, .item-glasses {
   width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .item-img {
@@ -92,7 +98,6 @@ html {
 }
 
 .description {
-  display: block;
   background-color: black;
   color: white;
   text-align: center;
@@ -103,12 +108,12 @@ html {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-top: 3rem 0 0 0;
 }
 
 .store-info {
   width: 35%;
+  margin: 4rem 0 0 0;
 }
 
 .store-info h4 {
@@ -123,5 +128,42 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: 4rem 0 0 0;
   height: 5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .item-lists {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-pen, .item-watch {
+    width: 47%;
+  }
+
+  .item-glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-pen {
+    width: 90%;
+  }
+
+  .item-watch, .item-glasses {
+    display: none;
+  }
 }
