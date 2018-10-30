@@ -110,7 +110,7 @@ html {
   margin: 3rem 0 0 0;
 }
 
-.Location, .Hours {
+.location, .hours {
   width: 35%;
 }
 
@@ -123,12 +123,16 @@ html {
 .footer {
   background-color: black;
   color: white;
+}
+
+.copyright {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 4rem 0 0 0;
   height: 5rem;
 }
+
 
 @media only screen and (max-width: 1024px) {
   .item-lists {
@@ -150,7 +154,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 505px) {
   .banner-tittle {
     top: 10rem;
     position: relative;
@@ -193,12 +197,15 @@ html {
 
   .store-info {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .location, .hours {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  .copyright {
     justify-content: center;
   }
-
-  .Location, .Hours {
-    width: 90%;
-    margin: 0.5rem 0 0 0;
-  }
-
 }
