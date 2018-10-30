@@ -13,10 +13,10 @@ html {
   color: white;
 }
 
-.header .container {
+.header-items {
   display: flex;
   align-items: center;
-  padding: 0.66rem 0.5rem 0.66rem 1rem;
+  padding: 0.66rem 1rem 0.66rem 0.5rem;
 }
 
 .header img {
@@ -72,7 +72,7 @@ html {
   display: none;
 }
 
-.products {
+.product-thumbnail {
   margin: 3rem 0 0 0;
   display: flex;
   justify-content: space-between;
@@ -104,16 +104,14 @@ html {
   padding: 0.5rem 0;
 }
 
-.store {
+.store-info {
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
-  margin-top: 3rem 0 0 0;
+  margin: 3rem 0 0 0;
 }
 
-.store-info {
+.Location, .Hours {
   width: 35%;
-  margin: 4rem 0 0 0;
 }
 
 .store-info h4 {
@@ -153,10 +151,36 @@ html {
 }
 
 @media only screen and (max-width: 470px) {
+  .banner-tittle {
+    top: 10rem;
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+  }
+
+  .banner-tittle h1 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .banner-tittle h3 {
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .main-banner {
+    height: 15rem;
+  }
+
   .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .product-thumbnail {
+    justify-content: center;
   }
 
   .item-pen {
@@ -166,4 +190,15 @@ html {
   .item-watch, .item-glasses {
     display: none;
   }
+
+  .store-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Location, .Hours {
+    width: 90%;
+    margin: 0.5rem 0 0 0;
+  }
+
 }
